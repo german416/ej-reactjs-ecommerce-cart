@@ -1,6 +1,6 @@
-function Card({ title = '', text = '', image = null, buttons = [] }) {
+function Card({ title = '', text = '', image = '../../../public/product_image_place_holder.png' }) {
   return <>
-    <div className="card" style={{ width: "18rem" }}>
+    <div className="card" style={{ width: "18rem", marginBottom: "1rem", marginRight: "0.8rem" }}>
       {image && <img src={image} className="card-img-top" alt="..." />}
       <div className="card-body">
         <h5 className="card-title">{title}</h5>
@@ -8,9 +8,8 @@ function Card({ title = '', text = '', image = null, buttons = [] }) {
       </div>
       <div className="card-footer">
         <div className="btn-group" role="group">
-          {buttons.map((button, index) => (
-            <button key={index} className="btn btn-sm btn-primary" onClick={button.onClick}>{button.text}</button>
-          ))}
+          <button className="btn btn-sm btn-primary">Comprar</button>
+          <button className="btn btn-sm btn-warning">Guardar</button>
         </div>
       </div>
     </div>

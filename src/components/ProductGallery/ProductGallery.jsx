@@ -1,12 +1,19 @@
 import './ProductGallery.css';
 import Card from '../Card';
 
-function ProductGallery({ productList }) {
+function ProductGallery({ products }) {
   let data = <h2 className='text-center'>Catálogo vacío</h2>
   let title;
 
-  if (productList && productList.length > 0) {
-    data = productList.map((product) => <Card key={product.id} data={product} />);
+  if (products && products.length > 0) {
+    data = products.map((product) => (
+      <Card
+        key={product.id}
+        title={product.name}
+        text={product.description}
+        price={product.price}
+      />
+    ));
     title = <h2 className='text-center'>Nuestro catálogo</h2>
   }
 
