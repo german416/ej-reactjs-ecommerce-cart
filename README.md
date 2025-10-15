@@ -1,24 +1,32 @@
-Requerimiento #1: Carrito de Compras
+# Pre-entrega
 
-Crear una funcionalidad básica para el manejo de un carrito de compras.
-Listar los productos disponibles.
-Usar un hook o useState para manejar el estado del carrito.
-Mostrar íconos para agregar productos y que se actualicen en otro componente.
+Plazo de entrega: 15/10 al 22/10
 
-Requerimiento #2: Conexión a API de Productos
+## Requerimientos
 
-Conectar la aplicación a una API que provea información sobre los productos.
-Implementar la integración con la API.
-Manejar estados de carga y errores.
+### 1 Carrito de compras
+- Crear un componente para listar los productos disponibles.
+- Usar el hook useState para manejar el estado del carrito.
+- Implementar un evento de clic que permita agregar productos al carrito.
+- Mostrar el carrito con los productos seleccionados en otro componente.
+- Crear un Layout del eCommerce.
 
-Requerimiento #3: Integración de Rutas
+### 2 API
+- Integración con una API.
+- Gestión del estado con useState.
+- Manejo de efectos secundarios con useEffect.
+- Estado de carga y errores.
+- Actualizar el diseño del eCommerce.
+- Ampliación del carrito.
 
-Crear componentes correspondientes para cada vista.
-Manejar estados de carga y navegación.
-Crear un componente para cada página de productos.
+### 3 Rutas
+- Implementación de rutas.
+- Crear componente para cada sección.
+- Navegar entre productos.
+- Estado de carga y manejo de errores.
 
-Requerimiento #4: Rutas Dinámicas y Protegidas
-
-Implementar rutas dinámicas.
-Manejar autenticación.
-Definir rutas privadas.
+### 4 Dinámicas y Protegidas
+- Rutas dinámicas.
+- Rutas protegidas.
+- Interactividad.
+- Navbar.
